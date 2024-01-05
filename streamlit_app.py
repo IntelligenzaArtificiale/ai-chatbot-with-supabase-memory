@@ -7,7 +7,7 @@ import random
 from dbmemory import init_connection, insert_chat, get_chat, update_chat, delete_chat, get_all_chat
 import asyncio
 
-st.title('🤖💬 OpenAI Chatbot')
+st.title('🤖💬 AI memoria CHAT')
 
 
 if "OPENAI_API_KEY" not in st.session_state:
