@@ -5,8 +5,8 @@ import streamlit as st
 # Uses st.cache_resource to only run once.
 @st.cache_resource
 def init_connection():
-    url = "https://miqjhryivzvftfskwpou.supabase.co"
-    key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pcWpocnlpdnp2ZnRmc2t3cG91Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQzNjQ1MzIsImV4cCI6MjAxOTk0MDUzMn0.7spXuEnUbVPTQiuojhc-3XzVt8BWAexC3ZeZSjsbyzo"
+    url = st.secrets["SUPABASE_URL"]
+    key = st.secrets["SUPABASE_KEY"]
     return create_client(url, key)
 
 import json
