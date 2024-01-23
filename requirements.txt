@@ -4,6 +4,6 @@ streamlit==1.29.0
 streamlit_option_menu==0.3.6
 supabase==2.3.3
 chromadb
-"unstructured[pdf]"
+unstructured[pdf]
 langchain-community
 
