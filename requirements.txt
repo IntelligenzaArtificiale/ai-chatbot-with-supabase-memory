@@ -6,4 +6,4 @@ supabase==2.3.3
 chromadb==0.3.29
 unstructured[pdf]
 langchain-community==0.0.14
-
+opencv-python
