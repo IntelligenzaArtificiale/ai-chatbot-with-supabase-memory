@@ -38,7 +38,7 @@ def chat():
         st.write("")
 
         if 'llm' not in st.session_state:
-            st.session_state.llm = ChatOpenAI( temperature=0, max_tokens=600, streaming=True, openai_api_key=st.session_state.OPENAI_API_KEY)     
+            st.session_state.llm = ChatOpenAI( temperature=0, max_tokens=600, streaming=True, openai_api_key=st.session_state.OPENAI_API_KEY , model_name="gpt-4")
 
         # Recuperiamo tutte le chat dell'utente attuale
         st.session_state.user_chats = get_all_chat(st.session_state.supabase, st.session_state.nome_utente)
